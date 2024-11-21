@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\DIRECIONADORES1.kml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\DIRECIONADORES1.kml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DirecionadoresMVC.Aplicacao\DirecionadoresMVC.Aplicacao.csproj" />
+  </ItemGroup>
+
+</Project>
